@@ -10,6 +10,7 @@ RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://cloud.nimbix.net/api/ja
 COPY src/* /home/nimbix/
 
 WORKDIR /tmp
+ENV TRANSFORMERS_CACHE=/tmp
 
 #RUN touch /etc/NAE/screenshot.txt /etc/NAE/license.txt 
 RUN mkdir -p /etc/NAE && touch /etc/NAE/AppDef.json
