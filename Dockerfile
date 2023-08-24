@@ -5,7 +5,7 @@ COPY NAE/AppDef.json /etc/NAE/AppDef.json
 #COPY NAE/license.txt /etc/NAE/license.txt
 
 RUN mkdir -p /home/nimbix
-COPY src/* /home/nimbix/
+#COPY src/* /home/nimbix/
 
 WORKDIR /home/nimbix
 
