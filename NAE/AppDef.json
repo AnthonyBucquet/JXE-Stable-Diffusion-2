@@ -24,7 +24,7 @@
       "PythonShell": {
         "path": "python",
         "interactive": false,
-        "webshell": true,
+        "webshell": false,
         "description": "Starts a Python shell",
         "name": "Python Shell",
         "parameters": {
