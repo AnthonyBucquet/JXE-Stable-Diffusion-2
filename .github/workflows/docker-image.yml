@@ -3,8 +3,6 @@ name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
 
 jobs:
 
@@ -15,4 +13,14 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag jxe-stable-diffusion-2:latest && docker push us-docker.pkg.dev/jarvice-salesengineering/images/jxe-stable-diffusion-2:latest
+      run: docker build . --file Dockerfile --tag jxe-stable-diffusion-2:latest 
+
+  deployment:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Deploy Stage
+      uses: fjogeleit/http-request-action@v1
+      with:
+        url: ${{ secrets.FEDERATED_PUSH2COMPUTE_URL }}
+        method: 'GET'
