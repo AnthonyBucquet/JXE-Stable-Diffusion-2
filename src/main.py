@@ -1,4 +1,7 @@
 import torch
+import os
+os.environ["TRANSFORMERS_CACHE"] = "/tmp"
+
 from diffusers import StableDiffusionPipeline, DPMSolverMultistepScheduler
 
 model_id = "stabilityai/stable-diffusion-2-1"
