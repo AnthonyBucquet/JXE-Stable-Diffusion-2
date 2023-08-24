@@ -32,7 +32,7 @@
              "type": "CONST",
              "required": true,
              "positional": true,
-             "value": "/home/nimbix/main.py"
+             "value": "/tmp/main.py"
             }
         }
       }
