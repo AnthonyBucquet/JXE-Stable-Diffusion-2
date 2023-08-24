@@ -22,9 +22,8 @@
     "scale_max": 1,
     "commands": {
       "PythonShell": {
-        "path": "/bin/bash -l",
         "interactive": true,
-        "webshell": true,
+        "webshell": false,
         "description": "Starts a Python shell",
         "name": "Python Shell",
         "parameters": {}
