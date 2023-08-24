@@ -1,7 +1,7 @@
 {
     "name": "Stable Diffusion 2",
     "description": "Text to Image AI model",
-    "author": "Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bjorn",
+    "author": "Stable Diffusion",
     "classifications": [
       "Rendering", "Machine Learning"
     ],
@@ -22,7 +22,7 @@
     "scale_max": 1,
     "commands": {
       "PythonShell": {
-        "path": "python",
+        "path": "/bin/bash -l",
         "interactive": true,
         "webshell": true,
         "description": "Starts a Python shell",
