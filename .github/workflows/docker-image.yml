@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag jxe-stable-diffusion-2:latest && docker push us-docker.pkg.dev/jarvice-salesengineering/images/jxe-stable-diffusion-2:latest
