@@ -7,9 +7,9 @@ RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://cloud.nimbix.net/api/ja
 #COPY NAE/screenshot.png /etc/NAE/screenshot.png
 #COPY NAE/license.txt /etc/NAE/license.txt
 
-COPY src/* /tmp/nimbix/
+COPY src/* /home/nimbix/
 
-WORKDIR /tmp/nimbix
+WORKDIR /home/nimbix
 
 #RUN touch /etc/NAE/screenshot.txt /etc/NAE/license.txt 
 RUN mkdir -p /etc/NAE && touch /etc/NAE/AppDef.json
