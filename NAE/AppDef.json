@@ -22,11 +22,20 @@
     "scale_max": 1,
     "commands": {
       "PythonShell": {
-        "interactive": true,
-        "webshell": false,
+        "path": "python",
+        "interactive": false,
+        "webshell": true,
         "description": "Starts a Python shell",
         "name": "Python Shell",
-        "parameters": {}
+        "parameters": {
+            "main": {
+             "name": "main",
+             "type": "CONST",
+             "required": true,
+             "positional": true,
+             "value": "/home/nimbix/main.py"
+            }
+        }
       }
     },
     "image": {
