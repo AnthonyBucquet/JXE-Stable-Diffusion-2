@@ -1,6 +1,9 @@
 FROM python:3.11
 
+
+
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
+RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://cloud.nimbix.net/api/jarvice/validate
 #COPY NAE/screenshot.png /etc/NAE/screenshot.png
 #COPY NAE/license.txt /etc/NAE/license.txt
 

@@ -21,7 +21,7 @@
     ],
     "scale_max": 1,
     "commands": {
-      "Python Shell": {
+      "PythonShell": {
         "path": "python",
         "interactive": true,
         "webshell": true,
