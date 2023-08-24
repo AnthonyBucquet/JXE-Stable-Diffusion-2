@@ -1,0 +1,37 @@
+{
+    "name": "Stable Diffusion 2",
+    "description": "Text to Image AI model",
+    "author": "Rombach, Robin and Blattmann, Andreas and Lorenz, Dominik and Esser, Patrick and Ommer, Bjorn",
+    "classifications": [
+      "Rendering", "Machine Learning"
+    ],
+    "licensed": false,
+    "appdefversion": 2,
+    "vault-types": [
+      "FILE",
+      "BLOCK",
+      "BLOCK_ARRAY",
+      "OBJECT"
+    ],
+    "machines": [
+      "nc*",
+      "ng*",
+      "n[2-9]*",
+      "n[1-9][0-9]*"
+    ],
+    "scale_max": 1,
+    "commands": {
+      "Python Shell": {
+        "path": "python",
+        "interactive": true,
+        "webshell": true,
+        "description": "Starts a Python shell",
+        "name": "Python Shell",
+        "parameters": {}
+      }
+    },
+    "image": {
+      "type": "image/png",
+      "data": ""
+    }
+  }
