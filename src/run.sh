@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cp /opt/main.py /home/nimbix
+cp /opt/src/main.py /home/nimbix
 python /home/nimbix/main.py
