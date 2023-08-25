@@ -8,7 +8,7 @@ RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://cloud.nimbix.net/api/ja
 #COPY NAE/license.txt /etc/NAE/license.txt
 
 COPY src/* /opt/
-RUN chmod +x /opt/run.sh
+RUN chmod 711 /opt/run.sh
 
 WORKDIR /home/nimbix
 
