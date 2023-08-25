@@ -21,7 +21,7 @@
     "scale_max": 1,
     "commands": {
       "PythonShell": {
-        "path": "/opt/run.sh",
+        "path": "/opt/src/run.sh",
         "interactive": false,
         "webshell": false,
         "description": "Starts a Python shell",
