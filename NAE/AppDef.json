@@ -21,19 +21,12 @@
     "scale_max": 1,
     "commands": {
       "PythonShell": {
-        "path": "python",
+        "path": "/opt/run.sh",
         "interactive": false,
         "webshell": false,
         "description": "Starts a Python shell",
         "name": "Python Shell",
         "parameters": {
-            "main": {
-             "name": "main",
-             "type": "CONST",
-             "required": true,
-             "positional": true,
-             "value": "/tmp/main.py"
-            }
         }
       }
     },
