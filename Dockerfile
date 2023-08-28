@@ -15,6 +15,7 @@ WORKDIR /home/nimbix
 #RUN touch /etc/NAE/screenshot.txt /etc/NAE/license.txt
 RUN mkdir -p /etc/NAE && touch /etc/NAE/AppDef.json
 
+
 # # # For testing locally
 # # Add nimbix user
 # RUN useradd --shell /bin/bash nimbix
