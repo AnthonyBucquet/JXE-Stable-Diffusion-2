@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-cp /opt/src/main.py /home/nimbix
-python /home/nimbix/main.py
+set -e
+
+cd $HOME
+cp /opt/src/main.py main.py
+python main.py

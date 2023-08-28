@@ -1,37 +1,35 @@
 {
-    "name": "Stable Diffusion 2",
-    "description": "Text to Image AI model",
-    "author": "Stable Diffusion",
-    "classifications": [
-      "Rendering", "Machine Learning"
-    ],
-    "licensed": false,
-    "vault-types": [
-      "FILE",
-      "BLOCK",
-      "BLOCK_ARRAY",
-      "OBJECT"
-    ],
-    "machines": [
-      "nc*",
-      "ng*",
-      "n[2-9]*",
-      "n[1-9][0-9]*"
-    ],
-    "scale_max": 1,
-    "commands": {
-      "PythonShell": {
-        "path": "/opt/src/run.sh",
-        "interactive": false,
-        "webshell": false,
-        "description": "Starts a Python shell",
-        "name": "Python Shell",
-        "parameters": {
-        }
+  "name": "Stable Diffusion 2",
+  "description": "Text to Image AI model",
+  "author": "Stable Diffusion",
+  "classifications": [
+    "Rendering", "Machine Learning"
+  ],
+  "licensed": true,
+  "appdefversion": 2,
+  "vault-types": [
+    "FILE"
+  ],
+  "machines": [
+    "nc*",
+    "ng*",
+    "n[2-9]*",
+    "n[1-9][0-9]*"
+  ],
+  "scale_max": 1,
+  "commands": {
+    "PythonShell": {
+      "path": "/opt/src/run.sh",
+      "interactive": false,
+      "webshell": false,
+      "description": "Starts a Python shell",
+      "name": "Python Shell",
+      "parameters": {
       }
-    },
-    "image": {
-      "type": "image/png",
-      "data": ""
     }
+  },
+  "image": {
+    "type": "image/png",
+    "data": ""
   }
+}

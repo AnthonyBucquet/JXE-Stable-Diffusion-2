@@ -12,5 +12,15 @@ RUN chmod -R a+r /opt/src && chmod 755 /opt/src/run.sh
 
 WORKDIR /home/nimbix
 
-#RUN touch /etc/NAE/screenshot.txt /etc/NAE/license.txt 
+#RUN touch /etc/NAE/screenshot.txt /etc/NAE/license.txt
 RUN mkdir -p /etc/NAE && touch /etc/NAE/AppDef.json
+
+# # # For testing locally
+# # Add nimbix user
+# RUN useradd --shell /bin/bash nimbix
+# RUN mkdir -p /home/nimbix/
+# RUN mkdir -p /data
+
+# # Have all files be owned by nimbix user
+# RUN chown -R nimbix:nimbix /home/nimbix
+# RUN chown -R nimbix:nimbix /data
