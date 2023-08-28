@@ -22,4 +22,4 @@ jobs:
           registry: ${{ secrets.DOCKER_URL }}
       -
         name: Build and Push the Docker image
-        run:   docker build . --file Dockerfile --tag jxe-stable-diffusion-2:latest && docker push jxe-stable-diffusion-2:latest
+        run:   docker build . --file Dockerfile --tag jxe-stable-diffusion-2:latest && docker push jarvice-salesengineering/jxe-stable-diffusion-2:latest
