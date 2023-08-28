@@ -11,23 +11,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag jxe-stable-diffusion-2:latest 
-    
     - name: Log in to the Container registry
       uses: docker/login-action@v1
       with:
           registry: ${{ secrets.DOCKER_URL }}
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-
-  deployment:
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Deploy Stage
-      uses: fjogeleit/http-request-action@v1
+  
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v4
       with:
-        url: ${{ secrets.FEDERATED_PUSH2COMPUTE_URL }}
-        method: 'GET'
+          push: true
+          tags: jxe-stable-diffusion-2:latest 
